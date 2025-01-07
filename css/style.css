@@ -1,0 +1,184 @@
+body {
+    
+    margin: 0px;
+    padding: 0;
+    background-color: #f8f5f5;
+    text-align: center;
+  }
+  
+  .titulo {
+    color: rgb(133, 21, 146);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .valor-section {
+    margin-top: 70px;
+    font-size: 1.4rem;
+    color: rgb(87, 87, 87);
+    
+    
+  }
+  
+  .metodos-pagamento {
+    margin: 20px 0;
+  }
+  
+  .pix, .cartao {
+    color: blue;
+    font-size: 1.2rem;
+
+  }
+  
+  input[type="text"] {
+    height: 20px; /* Altura consistente */
+    border-radius: 5px; /* Arredondamento */
+    border: 1px solid #ccc; /* Define borda */
+    padding: 5px 0px; /* Espaçamento interno */
+    font-size: 1rem;
+
+}
+
+  input[type="number"],
+  input[type="month"],
+  select {
+    border-radius: 5px; /* Arredondamento */
+    border: 1px solid #ccc; /* Define borda */
+    height: 25px;;
+
+}
+
+  .numero-cartao-container {
+    display: flex; /* Usa flexbox para alinhar os elementos */
+    align-items: center; /* Alinha os elementos verticalmente */
+    gap: 10px; /* Reduz o espaço entre o campo e o ícone */
+  }
+  
+  #numero-cartao {
+    flex: 1;
+    max-width: calc(80% - 50px); /* Ajusta espaço para o ícone */
+    height: 20px; /* Altura consistente */
+    border-radius: 5px; /* Arredondamento */
+    border: 1px solid #ccc; /* Define borda */
+    padding: 5px 0px; /* Espaçamento interno */
+    font-size: 1rem;
+
+  }
+  
+  #icone-cartao {
+    width: 60px; /* Ajusta largura do ícone */
+    height: 45px; /* Altura consistente com o campo */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: hidden; /* Inicialmente oculto */
+   
+  }
+  
+  #painel-pix {
+    border: 1px solid #ccc; /* Define uma borda fina */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 30px; /* Espaçamento interno */
+    max-width: 700px; /* Largura máxima do painel */
+    margin: 20px auto; /* Centraliza o painel horizontalmente */
+    box-shadow: 0 4px 6px rgba(56, 9, 224, 0.5); /* Adiciona uma leve sombra */
+  }
+
+  #painel-cartao {
+    border: 1px solid #ccc; /* Define uma borda fina */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    max-width: 800px; /* Largura máxima do painel */
+    margin: 20px auto; /* Centraliza o painel horizontalmente */
+    box-shadow: 0 4px 6px rgba(56, 9, 224, 0.5); /* Adiciona uma leve sombra */
+  }
+
+  /*painel pix */
+  .form-section {
+    display: flex;
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 30px;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+   
+    
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 1px; 
+    
+    
+  }
+  
+
+  .input-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px; 
+    width: 100%;
+    
+  }
+
+  .input-section label,
+  .input-inline label {
+    margin-bottom: 5px;
+}
+
+.input-section input,
+.input-inline input,
+.input-section select,
+.input-inline select {
+    margin-left: 10px; /* Espaço entre o campo de texto e o label */
+}
+
+
+
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+  
+  .hidden {
+    display: none;
+  }
+  
+  button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #7469e7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: 15%; /* Botão mais largo dentro do card */
+  text-align: center;
+
+  }
+  
+  .total {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #6a6a6c;
+  }
+  
+ 
+  
+  
+  
+  
+  

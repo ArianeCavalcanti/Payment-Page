@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Pagamento</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <h1 class="titulo">Página de Pagamento</h1>
+
+  <div class="valor-section">
+    <label for="valor">Valor:</label>
+    <input type="number" id="valor" step="0.01" min="0">
+  </div>
+
+  <div class="metodos-pagamento">
+    <label class="pix">
+      <input type="radio" name="pagamento" value="pix" id="pix" checked>
+      PIX
+    </label>
+    <label class="cartao">
+      <input type="radio" name="pagamento" value="cartao" id="cartao">
+      Cartão de Crédito
+    </label>
+  </div>
+
+  <button id="informar-dados">Informar dados</button>
+  <div id="erro-valor" class="error hidden">O campo valor deve ser preenchido!</div>
+
+  <!-- Painel PIX -->
+  <div id="painel-pix" class="form-section hidden">
+    <h2>PIX</h2>
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" placeholder="XXX.XXX.XXX-XX">
+    <div id="erro-cpf" class="error hidden">CPF inválido. Deve conter 11 dígitos no formato XXX.XXX.XXX-XX.</div>
+    <p class="total">Total: R$ <span id="total-pix">0,00</span></p>
+    <button id="pagar-pix">Pagar</button>
+  </div>
+
+  <!-- Painel Cartão de Crédito -->
+  <div id="painel-cartao" class="form-section hidden">
+    <h2>Cartão de Crédito</h2>
+  
+    <div class="input-inline">
+        <div>
+          <label for="titular">Titular:</label>
+          <input type="text" id="titular">
+        </div>
+        <div class="numero-cartao-container">
+          <label for="numero-cartao">Número do Cartão:</label>
+          <input type="text" id="numero-cartao" placeholder="Digite o número do cartão">
+          <span id="icone-cartao"></span>
+        </div>
+        
+        
+      </div>
+      <div id="icone-cartao" class="hidden"></div>
+
+ 
+  
+    <div id="erro-cartao" class="error hidden">Número de cartão inválido</div>
+  
+    <div class="input-inline">
+      <div>
+        <label for="codigo">Cód. Segurança:</label>
+        <input type="text" id="codigo">
+      </div>
+      <div>
+        <label for="vencimento">Vencimento:</label>
+        <input type="month" id="vencimento">
+      </div>
+    </div>
+  
+    <div class="input-section">
+      <label for="parcelas">Parcelas:</label>
+      <select id="parcelas">
+        <option value="1">1x</option>
+        <option value="2">2x</option>
+        <option value="3">3x</option>
+        <option value="4">4x</option>
+        <option value="5">5x</option>
+      </select>
+    </div>
+  
+    <p class="total">Total: R$ <span id="total-cartao">0,00</span></p>
+    <button id="pagar-cartao">Pagar</button>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

@@ -6,7 +6,15 @@ Neste projeto, você precisará usar seus conhecimentos em Javascript para imple
 Será possível pagar com Pix ou cartão de crédito, e a página deverá se comportar adequadamente, mostrando os campos necessários e calculando o valor corretamente,
 já que há descontos ou juros aplicados em cada caso.
 
+---
 
+## Atividade
+Observe os wireframes a seguir. Eles mostram a página com a opção Pix selecionada e com a opção Cartão de crédito selecionada.
+
+---
+
+<img src="./wire-ativ3-1.png" alt="wire">
+<img src="./wire-ativ3-2.png" alt="wire">
 
 ## Requisitos
 
